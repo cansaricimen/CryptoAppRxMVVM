@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		595C903E2B3D5D05001C8C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C903D2B3D5D05001C8C57 /* AppDelegate.swift */; };
+		595C90402B3D5D05001C8C57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C903F2B3D5D05001C8C57 /* SceneDelegate.swift */; };
+		595C90422B3D5D05001C8C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90412B3D5D05001C8C57 /* ViewController.swift */; };
+		595C90452B3D5D05001C8C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595C90432B3D5D05001C8C57 /* Main.storyboard */; };
+		595C90472B3D5D07001C8C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595C90462B3D5D07001C8C57 /* Assets.xcassets */; };
+		595C904A2B3D5D07001C8C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595C90482B3D5D07001C8C57 /* LaunchScreen.storyboard */; };
+		595C90552B3D5D07001C8C57 /* CryptoAppRxMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90542B3D5D07001C8C57 /* CryptoAppRxMVVMTests.swift */; };
+		595C905F2B3D5D08001C8C57 /* CryptoAppRxMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C905E2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.swift */; };
+		595C90612B3D5D08001C8C57 /* CryptoAppRxMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90602B3D5D08001C8C57 /* CryptoAppRxMVVMUITestsLaunchTests.swift */; };
+		595C90742B3D6055001C8C57 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90732B3D6055001C8C57 /* Crypto.swift */; };
+		595C90762B3D618E001C8C57 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90752B3D618E001C8C57 /* Webservice.swift */; };
+		595C90782B3D65AF001C8C57 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C90772B3D65AF001C8C57 /* CryptoViewModel.swift */; };
+		595C907B2B3D67B7001C8C57 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 595C907A2B3D67B7001C8C57 /* RxCocoa */; };
+		595C907D2B3D67B7001C8C57 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 595C907C2B3D67B7001C8C57 /* RxSwift */; };
+		595C907F2B3D7278001C8C57 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595C907E2B3D7278001C8C57 /* CryptoTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		595C90512B3D5D07001C8C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595C90322B3D5D05001C8C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595C90392B3D5D05001C8C57;
+			remoteInfo = CryptoAppRxMVVM;
+		};
+		595C905B2B3D5D07001C8C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595C90322B3D5D05001C8C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595C90392B3D5D05001C8C57;
+			remoteInfo = CryptoAppRxMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		595C903A2B3D5D05001C8C57 /* CryptoAppRxMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAppRxMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C903D2B3D5D05001C8C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		595C903F2B3D5D05001C8C57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		595C90412B3D5D05001C8C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		595C90442B3D5D05001C8C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		595C90462B3D5D07001C8C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		595C90492B3D5D07001C8C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		595C904B2B3D5D07001C8C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595C90502B3D5D07001C8C57 /* CryptoAppRxMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppRxMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C90542B3D5D07001C8C57 /* CryptoAppRxMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppRxMVVMTests.swift; sourceTree = "<group>"; };
+		595C905A2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppRxMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C905E2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppRxMVVMUITests.swift; sourceTree = "<group>"; };
+		595C90602B3D5D08001C8C57 /* CryptoAppRxMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppRxMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		595C90732B3D6055001C8C57 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		595C90752B3D618E001C8C57 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		595C90772B3D65AF001C8C57 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		595C907E2B3D7278001C8C57 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		595C90372B3D5D05001C8C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C907D2B3D67B7001C8C57 /* RxSwift in Frameworks */,
+				595C907B2B3D67B7001C8C57 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C904D2B3D5D07001C8C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C90572B3D5D07001C8C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		595C90312B3D5D05001C8C57 = {
+			isa = PBXGroup;
+			children = (
+				595C903C2B3D5D05001C8C57 /* CryptoAppRxMVVM */,
+				595C90532B3D5D07001C8C57 /* CryptoAppRxMVVMTests */,
+				595C905D2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests */,
+				595C903B2B3D5D05001C8C57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		595C903B2B3D5D05001C8C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				595C903A2B3D5D05001C8C57 /* CryptoAppRxMVVM.app */,
+				595C90502B3D5D07001C8C57 /* CryptoAppRxMVVMTests.xctest */,
+				595C905A2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		595C903C2B3D5D05001C8C57 /* CryptoAppRxMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				595C90722B3D603F001C8C57 /* Service */,
+				595C90712B3D6035001C8C57 /* Model */,
+				595C90702B3D6028001C8C57 /* ViewModel */,
+				595C906F2B3D601B001C8C57 /* View */,
+				595C90432B3D5D05001C8C57 /* Main.storyboard */,
+				595C90462B3D5D07001C8C57 /* Assets.xcassets */,
+				595C90482B3D5D07001C8C57 /* LaunchScreen.storyboard */,
+				595C904B2B3D5D07001C8C57 /* Info.plist */,
+			);
+			path = CryptoAppRxMVVM;
+			sourceTree = "<group>";
+		};
+		595C90532B3D5D07001C8C57 /* CryptoAppRxMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				595C90542B3D5D07001C8C57 /* CryptoAppRxMVVMTests.swift */,
+			);
+			path = CryptoAppRxMVVMTests;
+			sourceTree = "<group>";
+		};
+		595C905D2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				595C905E2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.swift */,
+				595C90602B3D5D08001C8C57 /* CryptoAppRxMVVMUITestsLaunchTests.swift */,
+			);
+			path = CryptoAppRxMVVMUITests;
+			sourceTree = "<group>";
+		};
+		595C906F2B3D601B001C8C57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				595C903F2B3D5D05001C8C57 /* SceneDelegate.swift */,
+				595C903D2B3D5D05001C8C57 /* AppDelegate.swift */,
+				595C90412B3D5D05001C8C57 /* ViewController.swift */,
+				595C907E2B3D7278001C8C57 /* CryptoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		595C90702B3D6028001C8C57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				595C90772B3D65AF001C8C57 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		595C90712B3D6035001C8C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				595C90732B3D6055001C8C57 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		595C90722B3D603F001C8C57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				595C90752B3D618E001C8C57 /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		595C90392B3D5D05001C8C57 /* CryptoAppRxMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C90642B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVM" */;
+			buildPhases = (
+				595C90362B3D5D05001C8C57 /* Sources */,
+				595C90372B3D5D05001C8C57 /* Frameworks */,
+				595C90382B3D5D05001C8C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoAppRxMVVM;
+			packageProductDependencies = (
+				595C907A2B3D67B7001C8C57 /* RxCocoa */,
+				595C907C2B3D67B7001C8C57 /* RxSwift */,
+			);
+			productName = CryptoAppRxMVVM;
+			productReference = 595C903A2B3D5D05001C8C57 /* CryptoAppRxMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		595C904F2B3D5D07001C8C57 /* CryptoAppRxMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C90672B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVMTests" */;
+			buildPhases = (
+				595C904C2B3D5D07001C8C57 /* Sources */,
+				595C904D2B3D5D07001C8C57 /* Frameworks */,
+				595C904E2B3D5D07001C8C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595C90522B3D5D07001C8C57 /* PBXTargetDependency */,
+			);
+			name = CryptoAppRxMVVMTests;
+			productName = CryptoAppRxMVVMTests;
+			productReference = 595C90502B3D5D07001C8C57 /* CryptoAppRxMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		595C90592B3D5D07001C8C57 /* CryptoAppRxMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595C906A2B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVMUITests" */;
+			buildPhases = (
+				595C90562B3D5D07001C8C57 /* Sources */,
+				595C90572B3D5D07001C8C57 /* Frameworks */,
+				595C90582B3D5D07001C8C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595C905C2B3D5D07001C8C57 /* PBXTargetDependency */,
+			);
+			name = CryptoAppRxMVVMUITests;
+			productName = CryptoAppRxMVVMUITests;
+			productReference = 595C905A2B3D5D07001C8C57 /* CryptoAppRxMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		595C90322B3D5D05001C8C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					595C90392B3D5D05001C8C57 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					595C904F2B3D5D07001C8C57 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 595C90392B3D5D05001C8C57;
+					};
+					595C90592B3D5D07001C8C57 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 595C90392B3D5D05001C8C57;
+					};
+				};
+			};
+			buildConfigurationList = 595C90352B3D5D05001C8C57 /* Build configuration list for PBXProject "CryptoAppRxMVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 595C90312B3D5D05001C8C57;
+			packageReferences = (
+				595C90792B3D67B7001C8C57 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 595C903B2B3D5D05001C8C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				595C90392B3D5D05001C8C57 /* CryptoAppRxMVVM */,
+				595C904F2B3D5D07001C8C57 /* CryptoAppRxMVVMTests */,
+				595C90592B3D5D07001C8C57 /* CryptoAppRxMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		595C90382B3D5D05001C8C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C904A2B3D5D07001C8C57 /* LaunchScreen.storyboard in Resources */,
+				595C90472B3D5D07001C8C57 /* Assets.xcassets in Resources */,
+				595C90452B3D5D05001C8C57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C904E2B3D5D07001C8C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C90582B3D5D07001C8C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		595C90362B3D5D05001C8C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C90742B3D6055001C8C57 /* Crypto.swift in Sources */,
+				595C90422B3D5D05001C8C57 /* ViewController.swift in Sources */,
+				595C903E2B3D5D05001C8C57 /* AppDelegate.swift in Sources */,
+				595C90762B3D618E001C8C57 /* Webservice.swift in Sources */,
+				595C90402B3D5D05001C8C57 /* SceneDelegate.swift in Sources */,
+				595C90782B3D65AF001C8C57 /* CryptoViewModel.swift in Sources */,
+				595C907F2B3D7278001C8C57 /* CryptoTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C904C2B3D5D07001C8C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C90552B3D5D07001C8C57 /* CryptoAppRxMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595C90562B3D5D07001C8C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595C905F2B3D5D08001C8C57 /* CryptoAppRxMVVMUITests.swift in Sources */,
+				595C90612B3D5D08001C8C57 /* CryptoAppRxMVVMUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		595C90522B3D5D07001C8C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595C90392B3D5D05001C8C57 /* CryptoAppRxMVVM */;
+			targetProxy = 595C90512B3D5D07001C8C57 /* PBXContainerItemProxy */;
+		};
+		595C905C2B3D5D07001C8C57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595C90392B3D5D05001C8C57 /* CryptoAppRxMVVM */;
+			targetProxy = 595C905B2B3D5D07001C8C57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		595C90432B3D5D05001C8C57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595C90442B3D5D05001C8C57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		595C90482B3D5D07001C8C57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595C90492B3D5D07001C8C57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		595C90622B3D5D08001C8C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		595C90632B3D5D08001C8C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		595C90652B3D5D08001C8C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoAppRxMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		595C90662B3D5D08001C8C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoAppRxMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		595C90682B3D5D08001C8C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoAppRxMVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoAppRxMVVM";
+			};
+			name = Debug;
+		};
+		595C90692B3D5D08001C8C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoAppRxMVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoAppRxMVVM";
+			};
+			name = Release;
+		};
+		595C906B2B3D5D08001C8C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoAppRxMVVM;
+			};
+			name = Debug;
+		};
+		595C906C2B3D5D08001C8C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM4N656MP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scs.CryptoAppRxMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoAppRxMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		595C90352B3D5D05001C8C57 /* Build configuration list for PBXProject "CryptoAppRxMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C90622B3D5D08001C8C57 /* Debug */,
+				595C90632B3D5D08001C8C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C90642B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C90652B3D5D08001C8C57 /* Debug */,
+				595C90662B3D5D08001C8C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C90672B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C90682B3D5D08001C8C57 /* Debug */,
+				595C90692B3D5D08001C8C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595C906A2B3D5D08001C8C57 /* Build configuration list for PBXNativeTarget "CryptoAppRxMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595C906B2B3D5D08001C8C57 /* Debug */,
+				595C906C2B3D5D08001C8C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		595C90792B3D67B7001C8C57 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		595C907A2B3D67B7001C8C57 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 595C90792B3D67B7001C8C57 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		595C907C2B3D67B7001C8C57 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 595C90792B3D67B7001C8C57 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 595C90322B3D5D05001C8C57 /* Project object */;
+}
